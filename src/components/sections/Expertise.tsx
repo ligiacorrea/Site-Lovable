@@ -27,7 +27,7 @@ const areas = [
 
 export function Expertise() {
   return (
-    <section id="expertise" className="py-20 md:py-28 bg-secondary">
+    <section id="expertise" className="py-20 md:py-28 bg-primary text-primary-foreground">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-4">
