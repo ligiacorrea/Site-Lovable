@@ -30,10 +30,10 @@ export function Expertise() {
     <section id="expertise" className="py-20 md:py-28 bg-primary text-primary-foreground">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-4">
+          <h2 className="font-display text-2xl md:text-3xl font-medium text-primary-foreground mb-4">
             Areas of Expertise
           </h2>
-          <p className="text-muted-foreground max-w-2xl mb-12 leading-relaxed text-sm md:text-base">
+          <p className="text-primary-foreground/70 max-w-2xl mb-12 leading-relaxed text-sm md:text-base">
             My work connects product strategy, user understanding and scalable content systems.
           </p>
 
