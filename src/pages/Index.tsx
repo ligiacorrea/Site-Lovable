@@ -1,14 +1,10 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
+import { HowIWork } from "@/components/sections/HowIWork";
+import { SelectedWork } from "@/components/sections/SelectedWork";
+import { Expertise } from "@/components/sections/Expertise";
 import { About } from "@/components/sections/About";
-import { Results } from "@/components/sections/Results";
-import { Cases } from "@/components/sections/Cases";
-import { Experience } from "@/components/sections/Experience";
-import { Education } from "@/components/sections/Education";
-import { Tools } from "@/components/sections/Tools";
-import { Testimonials } from "@/components/sections/Testimonials";
-
 import { Contact } from "@/components/sections/Contact";
 
 const Index = () => {
@@ -17,14 +13,10 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
+        <HowIWork />
+        <SelectedWork />
+        <Expertise />
         <About />
-        <Results />
-        <Cases />
-        <Experience />
-        <Education />
-        <Tools />
-        <Testimonials />
-        
         <Contact />
       </main>
       <Footer />
