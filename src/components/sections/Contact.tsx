@@ -24,7 +24,7 @@ export function Contact() {
             </a>
             <a
               href="mailto:ligia_cosi@hotmail.com"
-              className="flex items-center gap-3 text-sm text-foreground hover:text-muted-foreground transition-colors"
+              className="flex items-center gap-3 text-sm text-primary-foreground hover:text-primary-foreground/70 transition-colors"
             >
               <Mail className="h-5 w-5" strokeWidth={1.5} />
               Email
