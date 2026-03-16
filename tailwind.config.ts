@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ["'Newsreader'", "serif"],
+        display: ["'Fraunces'", "serif"],
         sans: ["'Inter'", "sans-serif"],
       },
       colors: {
