@@ -17,7 +17,7 @@ export function Contact() {
               href="https://www.linkedin.com/in/ligia-correa-ux-writer/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 text-sm text-foreground hover:text-muted-foreground transition-colors"
+              className="flex items-center gap-3 text-sm text-primary-foreground hover:text-primary-foreground/70 transition-colors"
             >
               <Linkedin className="h-5 w-5" strokeWidth={1.5} />
               LinkedIn
