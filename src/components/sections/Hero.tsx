@@ -16,12 +16,15 @@ export function Hero() {
             </p>
 
             <div className="space-y-4 text-sm md:text-base text-muted-foreground leading-relaxed">
-              <p className="text-primary font-medium">Hi, I'm Ligia.</p>
+              <p className="text-foreground font-medium">Hi, I'm Ligia.</p>
               <p>
-                I work at the intersection of content, product and research — helping teams transform complex user journeys into clear and structured experiences.
+                I work at the intersection of content, product and research, helping teams transform complex user
+                journeys into clear and structured experiences.
               </p>
               <p>
-                Over the past five years in UX Writing — and more than ten years in communication and digital marketing — I have focused on understanding user behavior, identifying friction points and designing content systems that support autonomy, reduce support needs and help teams scale decisions with consistency.
+                Over the past five years in UX Writing — and more than a decade in communication and digital marketing —
+                I have focused on understanding user behavior, identifying friction points and designing content systems
+                that support autonomy, reduce support needs and help teams scale decisions with consistency.
               </p>
             </div>
           </div>
