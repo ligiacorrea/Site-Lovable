@@ -51,7 +51,7 @@ export function Header() {
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }
             }}
-            className="font-display text-lg font-medium text-foreground"
+            className="font-display text-lg font-medium text-primary"
           >
             Ligia Corrêa
           </Link>

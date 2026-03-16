@@ -29,7 +29,7 @@ export function Contact() {
               <Mail className="h-5 w-5" strokeWidth={1.5} />
               Email
             </a>
-            <span className="flex items-center gap-3 text-sm text-muted-foreground">
+            <span className="flex items-center gap-3 text-sm text-primary-foreground/60">
               <MessageCircle className="h-5 w-5" strokeWidth={1.5} />
               Portfolio conversations or collaboration opportunities
             </span>

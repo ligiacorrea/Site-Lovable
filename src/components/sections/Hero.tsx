@@ -16,7 +16,7 @@ export function Hero() {
             </p>
 
             <div className="space-y-4 text-sm md:text-base text-muted-foreground leading-relaxed">
-              <p className="text-foreground font-medium">Hi, I'm Ligia.</p>
+              <p className="text-primary font-medium">Hi, I'm Ligia.</p>
               <p>
                 I work at the intersection of content, product and research — helping teams transform complex user journeys into clear and structured experiences.
               </p>

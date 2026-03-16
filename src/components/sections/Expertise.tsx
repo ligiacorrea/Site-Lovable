@@ -44,10 +44,10 @@ export function Expertise() {
                 className="animate-slide-up"
                 style={{ animationDelay: `${index * 0.08}s` }}
               >
-                <h3 className="font-display text-lg font-medium text-foreground mb-2">
+                <h3 className="font-display text-lg font-medium text-primary-foreground mb-2">
                   {area.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-sm text-primary-foreground/70 leading-relaxed">
                   {area.description}
                 </p>
               </div>
