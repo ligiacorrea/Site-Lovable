@@ -35,7 +35,7 @@ export function About() {
               <img
                 src={ligiaPhoto}
                 alt="Ligia — UX Content Strategist"
-                className="w-64 h-80 object-cover object-[center_30%] rounded-lg"
+                className="w-64 h-[26rem] object-cover object-[center_20%] rounded-lg"
               />
             </div>
           </div>
