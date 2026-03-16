@@ -5,10 +5,10 @@ export function Contact() {
     <section id="contact" className="py-20 md:py-28 bg-primary text-primary-foreground">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-4">
+          <h2 className="font-display text-2xl md:text-3xl font-medium text-primary-foreground mb-4">
             Let's Connect
           </h2>
-          <p className="text-muted-foreground mb-10 leading-relaxed text-sm md:text-base max-w-xl">
+          <p className="text-primary-foreground/70 mb-10 leading-relaxed text-sm md:text-base max-w-xl">
             If you're building complex products and care about clarity, scalable content systems and user autonomy, I'd love to connect.
           </p>
 
