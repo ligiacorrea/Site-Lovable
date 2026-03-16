@@ -35,7 +35,7 @@ export function About() {
               <img
                 src={ligiaPhoto}
                 alt="Ligia — UX Content Strategist"
-                className="w-64 h-80 object-cover rounded-lg grayscale hover:grayscale-0 transition-all duration-500"
+                className="w-64 h-80 object-cover object-[center_30%] rounded-lg"
               />
             </div>
           </div>
