@@ -34,12 +34,7 @@ export function Header() {
 
   return (
     <header
-      className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled
-          ? "bg-background/95 backdrop-blur-md border-b border-border"
-          : "bg-background/80 backdrop-blur-sm"
-      )}
+      className="fixed top-0 left-0 right-0 z-50 bg-primary"
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-14">
@@ -51,7 +46,7 @@ export function Header() {
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }
             }}
-            className="font-display text-lg font-medium text-primary"
+            className="font-display text-lg font-medium text-primary-foreground"
           >
             Ligia Corrêa
           </Link>
@@ -67,7 +62,7 @@ export function Header() {
                     handleNavClick(item.href);
                   }
                 }}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
                 {item.label}
               </a>
@@ -76,7 +71,7 @@ export function Header() {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-foreground"
+            className="md:hidden p-2 text-primary-foreground"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -85,7 +80,7 @@ export function Header() {
       </div>
 
       {isMobileMenuOpen && (
-        <nav className="md:hidden bg-background border-t border-border px-4 pb-4 pt-4 flex flex-col gap-4">
+        <nav className="md:hidden bg-primary border-t border-primary-foreground/10 px-4 pb-4 pt-4 flex flex-col gap-4">
           {navItems.map((item) => (
             <a
               key={item.href}
@@ -96,7 +91,7 @@ export function Header() {
                   handleNavClick(item.href);
                 }
               }}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
             >
               {item.label}
             </a>
