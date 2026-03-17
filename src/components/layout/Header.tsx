@@ -62,7 +62,7 @@ export function Header() {
                     handleNavClick(item.href);
                   }
                 }}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
                 {item.label}
               </a>
