@@ -13,7 +13,7 @@ const areas = [
 },
 {
   title: "Information Architecture",
-  description: "Structuring information to reduce cognitive load and improve navigation."
+  description: "Organizing content and product structures to reduce cognitive load and improve navigation."
 },
 {
   title: "Help Center & Self-Service Strategy",
