@@ -4,8 +4,8 @@ const stages = [
 {
   icon: Search,
   title: "Understand complexity",
-  subtitle: "Discovery & research",
-  description: "I begin by understanding the product ecosystem, the business context and the real problems users are experiencing. This includes desk research, UX research, analyzing support tickets, identifying friction points and validating hypotheses about how people interpret the product."
+  subtitle: "",
+  description: "Through discovery and research, I identify user needs, friction points and opportunities across the product ecosystem."
 },
 {
   icon: GitBranch,
