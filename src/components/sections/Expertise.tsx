@@ -1,29 +1,29 @@
 const areas = [
-  {
-    title: "UX Content Strategy",
-    description: "Defining content principles and frameworks that support product clarity.",
-  },
-  {
-    title: "Discovery & UX Research",
-    description: "Investigating user needs and validating hypotheses.",
-  },
-  {
-    title: "Conversational Design",
-    description: "Designing conversational flows that guide users through complex journeys.",
-  },
-  {
-    title: "Information Architecture",
-    description: "Structuring information to reduce cognitive load and improve navigation.",
-  },
-  {
-    title: "Help Center & Self-Service Strategy",
-    description: "Designing support ecosystems that empower users to find answers independently.",
-  },
-  {
-    title: "Content Operations",
-    description: "Creating governance, documentation and processes that allow content systems to scale.",
-  },
-];
+{
+  title: "UX Content Strategy",
+  description: "Defining content principles and frameworks that support product clarity."
+},
+{
+  title: "Discovery & UX Research",
+  description: "Investigating user needs and validating hypotheses."
+},
+{
+  title: "Conversational Design",
+  description: "Designing conversational flows that guide users through complex journeys."
+},
+{
+  title: "Information Architecture",
+  description: "Structuring information to reduce cognitive load and improve navigation."
+},
+{
+  title: "Help Center & Self-Service Strategy",
+  description: "Designing support ecosystems that empower users to find answers independently."
+},
+{
+  title: "Content Operations",
+  description: "Creating governance, documentation and processes that allow content systems to scale."
+}];
+
 
 export function Expertise() {
   return (
@@ -34,16 +34,16 @@ export function Expertise() {
             Areas of Expertise
           </h2>
           <p className="text-primary-foreground/70 max-w-2xl mb-12 leading-relaxed text-sm md:text-base">
-            My work connects product strategy, user understanding and scalable content systems.
+            ​My work focuses on connecting product strategy, user understanding and scalable content systems.
+
+Some of the areas where I most often contribute include:
+
+
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {areas.map((area, index) => (
-              <div
-                key={area.title}
-                className="animate-slide-up"
-                style={{ animationDelay: `${index * 0.08}s` }}
-              >
+            {areas.map((area, index) => <div key={area.title} className="animate-slide-up" style={{ animationDelay: `${index * 0.08}s` }}>
+              
                 <h3 className="font-display text-lg font-medium text-primary-foreground mb-2">
                   {area.title}
                 </h3>
@@ -51,10 +51,10 @@ export function Expertise() {
                   {area.description}
                 </p>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
