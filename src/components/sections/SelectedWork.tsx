@@ -70,7 +70,7 @@ export function SelectedWork() {
                 <h3 className="font-display text-xl font-medium text-foreground mb-3">
                   {project.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-5">
+                <p className="text-sm text-muted-foreground leading-relaxed mb-5 whitespace-pre-line">
                   {project.description}
                 </p>
 
