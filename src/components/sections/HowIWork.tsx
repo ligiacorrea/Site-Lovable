@@ -1,4 +1,11 @@
 import { Search, GitBranch, Users, Layers, FlaskConical } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const stages = [
 {
@@ -44,26 +51,38 @@ export function HowIWork() {
           <p className="text-muted-foreground max-w-2xl mb-12 leading-relaxed text-sm md:text-base">For me, content strategy is not only about writing better interface text.<br />It is about translating complexity into structured systems that make products easier to use and evolve.</p>
           <p className="text-muted-foreground max-w-2xl mb-12 leading-relaxed text-sm md:text-base">My work usually follows four main stages:</p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {stages.map((stage, index) => <div
-                key={stage.title}
-                className="bg-card border border-border rounded-lg p-6 animate-slide-up"
-                style={{ animationDelay: `${index * 0.1}s` }}>
-              
-                <stage.icon className="h-5 w-5 text-foreground mb-4" strokeWidth={1.5} />
-                <h3 className="font-display text-lg font-medium text-foreground mb-2">
-                  {stage.title}
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  <span className="font-medium text-foreground">{stage.subtitle}</span>
-                  <br />
-                  {stage.description}
-                </p>
-              </div>
-            )}
-          </div>
+          <Carousel
+            opts={{ align: "start", loop: false }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-4">
+              {stages.map((stage, index) => (
+                <CarouselItem
+                  key={stage.title}
+                  className="pl-4 basis-[85%] sm:basis-[45%] lg:basis-[30%]"
+                >
+                  <div
+                    className="bg-card border border-border rounded-lg p-6 h-full animate-slide-up"
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                  >
+                    <stage.icon className="h-5 w-5 text-foreground mb-4" strokeWidth={1.5} />
+                    <h3 className="font-display text-lg font-medium text-foreground mb-2">
+                      {stage.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {stage.description}
+                    </p>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="flex justify-end gap-2 mt-6">
+              <CarouselPrevious className="static translate-y-0" />
+              <CarouselNext className="static translate-y-0" />
+            </div>
+          </Carousel>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }
