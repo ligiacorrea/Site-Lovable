@@ -11,7 +11,7 @@ const stages = [
   icon: GitBranch,
   title: "Structure information",
   subtitle: "",
-  description: "I design information architecture, terminology, conversational flows or reorganize help center structures that simplify complex journeys."
+  description: "I design information architecture, terminology, conversational flows or help center structures that simplify complex journeys."
 },
 {
   icon: Users,
