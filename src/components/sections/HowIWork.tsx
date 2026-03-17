@@ -20,6 +20,12 @@ const stages = [
   description: "I create documentation, guidelines and governance models that support consistent content decisions."
 },
 {
+  icon: FlaskConical,
+  title: "Experiment and optimize",
+  subtitle: "",
+  description: "I conduct A/B tests and experiments to measure performance, identify what works best and optimize user experience based on data."
+},
+{
   icon: Layers,
   title: "Measure impact",
   subtitle: "",
