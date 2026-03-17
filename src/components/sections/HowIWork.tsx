@@ -48,7 +48,7 @@ export function HowIWork() {
           <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-4">
             How I Approach Content Strategy
           </h2>
-          <p className="text-muted-foreground mb-12 leading-relaxed text-sm md:text-base">For me, content strategy is not only about writing better interface text.<br />It is about translating complexity into structured systems that make products easier to use and evolve. My work usually follows five main stages:</p>
+          <p className="text-muted-foreground mb-12 leading-relaxed text-sm md:text-base">For me, content strategy is not only about writing better interface text. It is about translating complexity into structured systems that make products easier to use and evolve. My work usually follows five main stages:</p>
 
           <Carousel
             opts={{ align: "start", loop: false }}
