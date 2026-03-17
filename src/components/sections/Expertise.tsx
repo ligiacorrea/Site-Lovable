@@ -17,7 +17,7 @@ const areas = [
 },
 {
   title: "Help Center & Self-Service Strategy",
-  description: "Designing support ecosystems that empower users to find answers independently."
+  description: "Designing support ecosystems that increase user autonomy and reduce operational demand."
 },
 {
   title: "Content Operations",
