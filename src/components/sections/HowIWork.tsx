@@ -30,7 +30,7 @@ const stages = [
   icon: FlaskConical,
   title: "Experiment and optimize",
   subtitle: "",
-  description: "I conduct A/B tests and experiments to measure performance, identify what works best and optimize user experience based on data."
+  description: "I conduct A/B tests and experiments to measure performance, identify what works best and optimize user experience with data."
 },
 {
   icon: Layers,
