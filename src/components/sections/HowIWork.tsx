@@ -10,8 +10,8 @@ const stages = [
 {
   icon: GitBranch,
   title: "Structure information",
-  subtitle: "Content architecture",
-  description: "Once the problems are clear, I focus on structuring the information. This may involve designing conversational flows, defining terminology, improving information architecture or reorganizing help center structures so users can navigate the product with confidence."
+  subtitle: "",
+  description: "I design information architecture, terminology, conversational flows or reorganize help center structures that simplify complex journeys."
 },
 {
   icon: Users,
