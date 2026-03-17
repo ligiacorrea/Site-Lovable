@@ -41,9 +41,9 @@ const projects = [
   description:
   "Redesigned the information architecture and content strategy of the Help Center to improve discoverability, reduce support friction and support organic acquisition.\nThe work included taxonomy definition, article restructuring and alignment between product content and self-service documentation.",
   impact: [
-  "Research with 196 participants and 8 qualitative interviews",
-  "10 usability tests across two solution iterations",
-  "Delivered a feasible digital solution aligned with the NGO's operational reality"]
+  "Increased positive article feedback by 60%",
+  "Reduced negative feedback by 54%",
+  "Generated more than R$5M in organic revenue"]
 
 }];
 
