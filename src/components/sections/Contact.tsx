@@ -9,23 +9,23 @@ export function Contact() {
             Let's Connect
           </h2>
           <p className="text-primary-foreground/70 mb-10 leading-relaxed text-sm md:text-base max-w-xl">
-            If you're building complex products and care about clarity, scalable content systems and user autonomy, I'd love to connect.
+            If you're working on complex products and care about clarity, scalable content systems and user autonomy, I’d love to connect.
+You can reach me through:
+
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6">
-            <a
-              href="https://www.linkedin.com/in/ligia-correa-ux-writer/"
-              target="_blank"
+            <a href="https://www.linkedin.com/in/ligia-correa-ux-writer/" target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 text-sm text-primary-foreground hover:text-primary-foreground/70 transition-colors"
-            >
+              className="flex items-center gap-3 text-sm text-primary-foreground hover:text-primary-foreground/70 transition-colors">
+              
               <Linkedin className="h-5 w-5" strokeWidth={1.5} />
               LinkedIn
             </a>
             <a
               href="mailto:ligia_cosi@hotmail.com"
-              className="flex items-center gap-3 text-sm text-primary-foreground hover:text-primary-foreground/70 transition-colors"
-            >
+              className="flex items-center gap-3 text-sm text-primary-foreground hover:text-primary-foreground/70 transition-colors">
+              
               <Mail className="h-5 w-5" strokeWidth={1.5} />
               Email
             </a>
@@ -36,6 +36,6 @@ export function Contact() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
