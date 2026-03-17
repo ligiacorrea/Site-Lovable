@@ -37,9 +37,9 @@ const projects = [
 },
 {
   slug: "ong-voluntarios",
-  title: "UX Strategy for Volunteer Engagement (NGO Project)",
+  title: "Help Center Strategy & SEO Growth",
   description:
-  "Led UX research and solution design for Projeto Kurumins as part of a volunteer UX challenge. The project focused on improving volunteer recruitment, organization and retention by designing a lightweight digital management system.",
+  "Redesigned the information architecture and content strategy of the Help Center to improve discoverability, reduce support friction and support organic acquisition.\nThe work included taxonomy definition, article restructuring and alignment between product content and self-service documentation.",
   impact: [
   "Research with 196 participants and 8 qualitative interviews",
   "10 usability tests across two solution iterations",
@@ -70,7 +70,7 @@ export function SelectedWork() {
                 <h3 className="font-display text-xl font-medium text-foreground mb-3">
                   {project.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-5">
+                <p className="text-sm text-muted-foreground leading-relaxed mb-5 whitespace-pre-line">
                   {project.description}
                 </p>
 
