@@ -35,10 +35,8 @@ export function HowIWork() {
           <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-4">
             How I Approach Content Strategy
           </h2>
-          <p className="text-muted-foreground max-w-2xl mb-12 leading-relaxed text-sm md:text-base">For me, content strategy is not only about writing better interface text. It is about understanding complexity and building systems that make products easier to navigate, use and evolve.
-
-
-My work usually follows four main stages:</p>
+          <p className="text-muted-foreground max-w-2xl mb-12 leading-relaxed text-sm md:text-base">For me, content strategy is not only about writing better interface text. It is about understanding complexity and building systems that make products easier to navigate, use and evolve.</p>
+          <p className="text-muted-foreground max-w-2xl mb-12 leading-relaxed text-sm md:text-base">My work usually follows four main stages:</p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {stages.map((stage, index) => <div
