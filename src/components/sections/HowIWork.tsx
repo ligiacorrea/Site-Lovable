@@ -4,22 +4,26 @@ const stages = [
 {
   icon: Search,
   title: "Understand Complexity",
-  description: "Discovery and research to identify user needs, friction points and opportunities."
+  subtitle: "Discovery & research",
+  description: "I begin by understanding the product ecosystem, the business context and the real problems users are experiencing. This includes desk research, UX research, analyzing support tickets, identifying friction points and validating hypotheses about how people interpret the product."
 },
 {
   icon: GitBranch,
   title: "Structure Information",
-  description: "Designing information architecture, terminology and conversational flows that simplify complex journeys."
+  subtitle: "Content architecture",
+  description: "Once the problems are clear, I focus on structuring the information. This may involve designing conversational flows, defining terminology, improving information architecture or reorganizing help center structures so users can navigate the product with confidence."
 },
 {
   icon: Users,
   title: "Enable Teams",
-  description: "Creating documentation, guidelines and governance models that support consistent decisions."
+  subtitle: "Documentation & governance",
+  description: "Content decisions need to be scalable. I create documentation, guidelines and frameworks that help product teams make consistent decisions over time and reduce dependency on individual contributors."
 },
 {
   icon: Layers,
-  title: "Scale Clarity",
-  description: "Implementing content systems and operational processes that allow products to evolve while maintaining clarity."
+  title: "Continuous Improvement",
+  subtitle: "Content systems",
+  description: "Finally, the goal is to ensure the system continues working as the product evolves. This often includes content operations, cross-team collaboration and governance models that maintain clarity while the product grows."
 }];
 
 
