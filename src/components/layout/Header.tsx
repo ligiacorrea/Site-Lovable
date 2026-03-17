@@ -80,7 +80,7 @@ export function Header() {
       </div>
 
       {isMobileMenuOpen && (
-        <nav className="md:hidden bg-background border-t border-border px-4 pb-4 pt-4 flex flex-col gap-4">
+        <nav className="md:hidden bg-primary border-t border-primary-foreground/10 px-4 pb-4 pt-4 flex flex-col gap-4">
           {navItems.map((item) => (
             <a
               key={item.href}
