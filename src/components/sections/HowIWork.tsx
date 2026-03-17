@@ -3,7 +3,7 @@ import { Search, GitBranch, Users, Layers } from "lucide-react";
 const stages = [
 {
   icon: Search,
-  title: "Understand Complexity",
+  title: "Understand complexity",
   subtitle: "Discovery & research",
   description: "I begin by understanding the product ecosystem, the business context and the real problems users are experiencing. This includes desk research, UX research, analyzing support tickets, identifying friction points and validating hypotheses about how people interpret the product."
 },
