@@ -20,7 +20,7 @@ const areas = [
   description: "Designing support ecosystems that increase user autonomy and reduce operational demand."
 },
 {
-  title: "Content Operations",
+  title: "Content Operations & Governance",
   description: "Creating governance, documentation and processes that allow content systems to scale."
 }];
 
