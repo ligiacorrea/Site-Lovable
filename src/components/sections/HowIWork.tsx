@@ -4,8 +4,8 @@ import {
   CarouselContent,
   CarouselItem,
   CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+  CarouselPrevious } from
+"@/components/ui/carousel";
 
 const stages = [
 {
@@ -49,22 +49,22 @@ export function HowIWork() {
             How I Approach Content Strategy
           </h2>
           <p className="text-muted-foreground max-w-2xl mb-12 leading-relaxed text-sm md:text-base">For me, content strategy is not only about writing better interface text.<br />It is about translating complexity into structured systems that make products easier to use and evolve.</p>
-          <p className="text-muted-foreground max-w-2xl mb-12 leading-relaxed text-sm md:text-base">My work usually follows four main stages:</p>
+          <p className="text-muted-foreground max-w-2xl mb-12 leading-relaxed text-sm md:text-base">My work usually follows five main stages:</p>
 
           <Carousel
             opts={{ align: "start", loop: false }}
-            className="w-full"
-          >
+            className="w-full">
+            
             <CarouselContent className="-ml-4">
-              {stages.map((stage, index) => (
-                <CarouselItem
-                  key={stage.title}
-                  className="pl-4 basis-[85%] sm:basis-[45%] lg:basis-[30%]"
-                >
+              {stages.map((stage, index) =>
+              <CarouselItem
+                key={stage.title}
+                className="pl-4 basis-[85%] sm:basis-[45%] lg:basis-[30%]">
+                
                   <div
-                    className="bg-card border border-border rounded-lg p-6 h-full animate-slide-up"
-                    style={{ animationDelay: `${index * 0.1}s` }}
-                  >
+                  className="bg-card border border-border rounded-lg p-6 h-full animate-slide-up"
+                  style={{ animationDelay: `${index * 0.1}s` }}>
+                  
                     <stage.icon className="h-5 w-5 text-foreground mb-4" strokeWidth={1.5} />
                     <h3 className="font-display text-lg font-medium text-foreground mb-2">
                       {stage.title}
@@ -74,7 +74,7 @@ export function HowIWork() {
                     </p>
                   </div>
                 </CarouselItem>
-              ))}
+              )}
             </CarouselContent>
             <div className="flex justify-end gap-2 mt-6">
               <CarouselPrevious className="static translate-y-0" />
@@ -83,6 +83,6 @@ export function HowIWork() {
           </Carousel>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
