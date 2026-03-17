@@ -50,70 +50,70 @@ export function HowIWork() {
             My work usually follows four main stages — as a continuous cycle:
           </p>
 
-          {/* Diamond framework — desktop */}
+          {/* Double Diamond framework — desktop */}
           <div className="hidden lg:flex justify-center items-center mb-8">
-            <div className="relative w-[640px] h-[640px]">
-              {/* Connecting dashed lines */}
+            <div className="relative w-[900px] h-[360px]">
+              {/* SVG double diamond shape */}
               <svg
                 className="absolute inset-0 w-full h-full"
-                viewBox="0 0 640 640"
+                viewBox="0 0 900 360"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M320 115 L525 320" stroke="hsl(var(--border))" strokeWidth="1.5" strokeDasharray="6 4" />
-                <path d="M525 320 L320 525" stroke="hsl(var(--border))" strokeWidth="1.5" strokeDasharray="6 4" />
-                <path d="M320 525 L115 320" stroke="hsl(var(--border))" strokeWidth="1.5" strokeDasharray="6 4" />
-                <path d="M115 320 L320 115" stroke="hsl(var(--border))" strokeWidth="1.5" strokeDasharray="6 4" />
-                {/* Arrow indicators */}
-                <polygon points="422,218 432,228 418,225" fill="hsl(var(--muted-foreground))" opacity="0.4" />
-                <polygon points="422,422 432,412 418,415" fill="hsl(var(--muted-foreground))" opacity="0.4" />
-                <polygon points="218,422 208,412 222,415" fill="hsl(var(--muted-foreground))" opacity="0.4" />
-                <polygon points="218,218 208,228 222,225" fill="hsl(var(--muted-foreground))" opacity="0.4" />
+                {/* First diamond */}
+                <path d="M50 180 L250 40 L450 180 L250 320 Z" stroke="hsl(var(--border))" strokeWidth="1.5" strokeDasharray="6 4" fill="hsl(var(--card))" fillOpacity="0.3" />
+                {/* Second diamond */}
+                <path d="M450 180 L650 40 L850 180 L650 320 Z" stroke="hsl(var(--border))" strokeWidth="1.5" strokeDasharray="6 4" fill="hsl(var(--card))" fillOpacity="0.3" />
+                {/* Arrow at center junction */}
+                <polygon points="450,170 460,180 450,190" fill="hsl(var(--muted-foreground))" opacity="0.5" />
               </svg>
 
-              {/* Top — Stage 1 */}
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-52 text-center animate-slide-up">
-                <div className="bg-card border border-border rounded-lg p-5 shadow-sm">
+              {/* Labels above diamonds */}
+              <div className="absolute top-1 left-[90px] w-[320px] text-center">
+                <span className="text-xs font-mono uppercase tracking-widest text-muted-foreground">Discover the problem</span>
+              </div>
+              <div className="absolute top-1 left-[490px] w-[320px] text-center">
+                <span className="text-xs font-mono uppercase tracking-widest text-muted-foreground">Design the solution</span>
+              </div>
+
+              {/* Stage 1 — left vertex */}
+              <div className="absolute left-0 top-1/2 -translate-y-1/2 w-44 text-center animate-slide-up">
+                <div className="bg-card border border-border rounded-lg p-4 shadow-sm">
                   <span className="text-xs font-mono text-muted-foreground">01</span>
                   <Search className="h-5 w-5 text-foreground mx-auto my-2" strokeWidth={1.5} />
-                  <h3 className="font-display text-base font-medium text-foreground mb-1">{stages[0].title}</h3>
+                  <h3 className="font-display text-sm font-medium text-foreground mb-1">{stages[0].title}</h3>
                   <p className="text-xs text-muted-foreground">{stages[0].subtitle}</p>
                 </div>
               </div>
 
-              {/* Right — Stage 2 */}
-              <div className="absolute right-0 top-1/2 -translate-y-1/2 w-52 text-center animate-slide-up stagger-1">
-                <div className="bg-card border border-border rounded-lg p-5 shadow-sm">
+              {/* Stage 2 — center-left (first diamond right = second diamond left) */}
+              <div className="absolute left-[355px] top-1/2 -translate-y-1/2 w-44 text-center animate-slide-up stagger-1 z-10">
+                <div className="bg-card border border-border rounded-lg p-4 shadow-sm">
                   <span className="text-xs font-mono text-muted-foreground">02</span>
                   <GitBranch className="h-5 w-5 text-foreground mx-auto my-2" strokeWidth={1.5} />
-                  <h3 className="font-display text-base font-medium text-foreground mb-1">{stages[1].title}</h3>
+                  <h3 className="font-display text-sm font-medium text-foreground mb-1">{stages[1].title}</h3>
                   <p className="text-xs text-muted-foreground">{stages[1].subtitle}</p>
                 </div>
               </div>
 
-              {/* Bottom — Stage 3 */}
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-52 text-center animate-slide-up stagger-2">
-                <div className="bg-card border border-border rounded-lg p-5 shadow-sm">
+              {/* Stage 3 — center-right */}
+              <div className="absolute left-[555px] top-1/2 -translate-y-1/2 w-44 text-center animate-slide-up stagger-2 z-10">
+                <div className="bg-card border border-border rounded-lg p-4 shadow-sm">
                   <span className="text-xs font-mono text-muted-foreground">03</span>
                   <Users className="h-5 w-5 text-foreground mx-auto my-2" strokeWidth={1.5} />
-                  <h3 className="font-display text-base font-medium text-foreground mb-1">{stages[2].title}</h3>
+                  <h3 className="font-display text-sm font-medium text-foreground mb-1">{stages[2].title}</h3>
                   <p className="text-xs text-muted-foreground">{stages[2].subtitle}</p>
                 </div>
               </div>
 
-              {/* Left — Stage 4 */}
-              <div className="absolute left-0 top-1/2 -translate-y-1/2 w-52 text-center animate-slide-up stagger-3">
-                <div className="bg-card border border-border rounded-lg p-5 shadow-sm">
+              {/* Stage 4 — right vertex */}
+              <div className="absolute right-0 top-1/2 -translate-y-1/2 w-44 text-center animate-slide-up stagger-3">
+                <div className="bg-card border border-border rounded-lg p-4 shadow-sm">
                   <span className="text-xs font-mono text-muted-foreground">04</span>
                   <Layers className="h-5 w-5 text-foreground mx-auto my-2" strokeWidth={1.5} />
-                  <h3 className="font-display text-base font-medium text-foreground mb-1">{stages[3].title}</h3>
+                  <h3 className="font-display text-sm font-medium text-foreground mb-1">{stages[3].title}</h3>
                   <p className="text-xs text-muted-foreground">{stages[3].subtitle}</p>
                 </div>
-              </div>
-
-              {/* Center label */}
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <span className="font-display text-sm text-muted-foreground italic">continuous cycle</span>
               </div>
             </div>
           </div>
