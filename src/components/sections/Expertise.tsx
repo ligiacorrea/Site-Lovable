@@ -1,7 +1,7 @@
 const areas = [
 {
   title: "UX Content Strategy",
-  description: "Defining content principles and frameworks that support product clarity."
+  description: "Defining content principles and decision frameworks that guide product experiences at scale."
 },
 {
   title: "Discovery & UX Research",
