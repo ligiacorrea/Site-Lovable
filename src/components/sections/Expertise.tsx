@@ -34,7 +34,7 @@ export function Expertise() {
             Areas of Expertise
           </h2>
           <p className="text-primary-foreground/70 max-w-2xl mb-4 leading-relaxed text-sm md:text-base">
-            My work focuses on connecting product strategy, user understanding and scalable content systems.
+            My work connects product strategy, user understanding and scalable content systems.
           </p>
           <p className="text-primary-foreground/70 max-w-2xl mb-12 leading-relaxed text-sm md:text-base">
             Some of the areas where I most often contribute include:
