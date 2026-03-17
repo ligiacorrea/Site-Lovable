@@ -56,7 +56,7 @@ export function SelectedWork() {
           <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-4">
             Selected Work
           </h2>
-          <p className="text-muted-foreground max-w-2xl mb-12 leading-relaxed text-sm md:text-base">
+          <p className="text-muted-foreground max-w-full mb-12 leading-relaxed text-sm md:text-base">
             Below are a few examples of projects where I helped improve product clarity, user autonomy and internal alignment through content strategy.
 
           </p>
