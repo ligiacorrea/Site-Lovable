@@ -51,6 +51,8 @@ My work usually follows four main stages:</p>
                   {stage.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
+                  <span className="font-medium text-foreground">{stage.subtitle}</span>
+                  <br />
                   {stage.description}
                 </p>
               </div>
