@@ -9,7 +9,7 @@ const areas = [
 },
 {
   title: "Conversational Design",
-  description: "Designing conversational flows that guide users through complex journeys."
+  description: "Designing structured conversational flows for chatbot, automation and guided user experiences."
 },
 {
   title: "Information Architecture",
