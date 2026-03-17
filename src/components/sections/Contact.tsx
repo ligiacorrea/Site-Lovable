@@ -16,8 +16,8 @@ You can reach me through:
 
           <div className="flex flex-col sm:flex-row gap-6">
             <a href="https://www.linkedin.com/in/ligia-correa-ux-writer/" target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 text-sm text-primary-foreground hover:text-primary-foreground/70 transition-colors">
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 text-sm text-primary-foreground hover:text-primary-foreground/70 transition-colors">
               
               <Linkedin className="h-5 w-5" strokeWidth={1.5} />
               LinkedIn
@@ -29,10 +29,10 @@ You can reach me through:
               <Mail className="h-5 w-5" strokeWidth={1.5} />
               Email
             </a>
-            <span className="flex items-center gap-3 text-sm text-primary-foreground/60">
-              <MessageCircle className="h-5 w-5" strokeWidth={1.5} />
-              Portfolio conversations or collaboration opportunities
-            </span>
+            
+
+
+            
           </div>
         </div>
       </div>
