@@ -29,10 +29,14 @@ You can reach me through:
               <Mail className="h-5 w-5" strokeWidth={1.5} />
               Email
             </a>
-            
-
-
-            
+            <a
+              href="https://wa.me/5511999673847"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 text-sm text-primary-foreground hover:text-primary-foreground/70 transition-colors">
+              <MessageCircle className="h-5 w-5" strokeWidth={1.5} />
+              WhatsApp
+            </a>
           </div>
         </div>
       </div>
