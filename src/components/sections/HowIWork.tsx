@@ -1,4 +1,4 @@
-import { Search, GitBranch, Users, Layers } from "lucide-react";
+import { Search, GitBranch, Users, Layers, FlaskConical } from "lucide-react";
 
 const stages = [
 {
@@ -18,6 +18,12 @@ const stages = [
   title: "Enable teams",
   subtitle: "",
   description: "I create documentation, guidelines and governance models that support consistent content decisions."
+},
+{
+  icon: FlaskConical,
+  title: "Experiment and optimize",
+  subtitle: "",
+  description: "I conduct A/B tests and experiments to measure performance, identify what works best and optimize user experience based on data."
 },
 {
   icon: Layers,
