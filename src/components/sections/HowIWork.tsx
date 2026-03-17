@@ -16,8 +16,8 @@ const stages = [
 {
   icon: Users,
   title: "Enable teams",
-  subtitle: "Documentation & governance",
-  description: "Content decisions need to be scalable. I create documentation, guidelines and frameworks that help product teams make consistent decisions over time and reduce dependency on individual contributors."
+  subtitle: "",
+  description: "I create documentation, guidelines and governance models that support consistent content decisions."
 },
 {
   icon: Layers,
