@@ -5,7 +5,7 @@ const areas = [
 },
 {
   title: "Discovery & UX Research",
-  description: "Investigating user needs and validating hypotheses."
+  description: "Investigating user behavior, validating hypotheses and identifying friction across journeys."
 },
 {
   title: "Conversational Design",
