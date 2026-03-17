@@ -21,9 +21,9 @@ const stages = [
 },
 {
   icon: Layers,
-  title: "Continuous improvement",
-  subtitle: "Content systems",
-  description: "Finally, the goal is to ensure the system continues working as the product evolves. This often includes content operations, cross-team collaboration and governance models that maintain clarity while the product grows."
+  title: "Measure impact",
+  subtitle: "",
+  description: "I define and track KPIs and OKRs to evaluate content performance, guide decisions and continuously improve the product experience."
 }];
 
 
