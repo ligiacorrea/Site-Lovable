@@ -21,7 +21,7 @@ const areas = [
 },
 {
   title: "Content Operations & Governance",
-  description: "Creating governance, documentation and processes that allow content systems to scale."
+  description: "Building documentation, processes and systems that enable teams to scale content with consistency."
 }];
 
 
