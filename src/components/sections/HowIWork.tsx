@@ -1,4 +1,4 @@
-import { Search, GitBranch, Users, Layers } from "lucide-react";
+import { Search, GitBranch, Users, Layers, FlaskConical } from "lucide-react";
 
 const stages = [
 {
