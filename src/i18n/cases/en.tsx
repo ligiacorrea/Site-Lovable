@@ -380,193 +380,72 @@ export const casesDataEn: CasesDataRecord = {
         title: "Problem",
         content: (
           <div className="space-y-6">
-            <p>Until 2023, iCasei didn't have an efficient or scalable chat service. This generated:</p>
+            <p>Before 2023, iCasei did not have a scalable conversational support system.</p>
+
+            <p>Customer service relied heavily on human agents, which generated:</p>
             <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
-              <li>High dependence on human support</li>
-              <li>Growing operational costs</li>
-              <li>Inconsistent experience for couples and guests</li>
-              <li>Lack of 24/7 availability</li>
-              <li>High ticket volume</li>
+              <li>High operational costs</li>
+              <li>Large ticket volumes</li>
+              <li>Limited availability outside business hours</li>
+              <li>Inconsistent support experiences</li>
             </ul>
 
             <p>
-              Additionally, the <strong>RSVP (confirmation of attendance)</strong> process happened passively
-              (site/app) or by phone, generating:
+              Additionally, RSVP confirmations were handled manually through the website or phone calls, resulting in:
             </p>
             <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
-              <li>Low response rate</li>
-              <li>Limited experience for guests</li>
-              <li>Costly and non-scalable operation</li>
+              <li>Low guest response rates</li>
+              <li>Limited guest experience</li>
+              <li>Operational inefficiencies</li>
             </ul>
 
-            <p>There was, therefore, a clear opportunity to use technology to:</p>
-            <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
-              <li>Improve customer experience</li>
-              <li>Reduce tickets</li>
-              <li>Automate repetitive tasks</li>
-              <li>Create new competitive differentiators (such as active RSVP via WhatsApp)</li>
-            </ul>
+            <p>
+              There was a clear opportunity to use conversational systems to improve customer experience while reducing
+              operational friction.
+            </p>
           </div>
         ),
       },
       {
-        title: "Process",
+        title: "Approach",
         content: (
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-xl font-semibold mb-4">1. Solution architecture and planning</h3>
-              <p className="mb-4">
-                3 <strong>bot models</strong> were structured, each meeting specific needs:
-              </p>
+          <div className="space-y-6">
+            <p>I helped design a conversational ecosystem based on three complementary solutions:</p>
 
-              <div className="space-y-6">
-                <div className="bg-muted/30 p-4 rounded-lg">
-                  <h4 className="font-semibold mb-2">RSVP via WhatsApp (developed internally)</h4>
-                  <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
-                    <li>
-                      Consideration of multiple scenarios and exceptions involved in the attendance confirmation process
-                    </li>
-                    <li>Direct collaboration with development to ensure technical feasibility</li>
-                  </ul>
-                  <figure className="mt-4">
-                    <img
-                      src={img.botRsvpMockup}
-                      alt="Mockup of WhatsApp attendance confirmation conversation"
-                      className="w-full rounded-lg border border-border"
-                    />
-                    <figcaption className="text-sm text-muted-foreground mt-2 text-center italic">
-                      Mockup of WhatsApp attendance confirmation conversation
-                    </figcaption>
-                  </figure>
-                  <figure className="mt-4">
-                    <img
-                      src={img.botFluxoMiroV1}
-                      alt="Conversational flow in Miro (initial version for testing)"
-                      className="w-full rounded-lg border border-border"
-                    />
-                    <figcaption className="text-sm text-muted-foreground mt-2 text-center italic">
-                      Conversational flow in Miro (initial version for testing)
-                    </figcaption>
-                  </figure>
-                  <figure className="mt-4">
-                    <img
-                      src={img.botFluxoMiroOficial}
-                      alt="Official flow in Miro with use case table requiring error messages"
-                      className="w-full rounded-lg border border-border"
-                    />
-                    <figcaption className="text-sm text-muted-foreground mt-2 text-center italic">
-                      Official flow in Miro with use case table requiring error messages
-                    </figcaption>
-                  </figure>
-                  <figure className="mt-4">
-                    <img
-                      src={img.botFluxoMiroIds}
-                      alt="Official flow in Miro with database ID links (for dev)"
-                      className="w-full rounded-lg border border-border"
-                    />
-                    <figcaption className="text-sm text-muted-foreground mt-2 text-center italic">
-                      Official flow in Miro with database ID links (for dev)
-                    </figcaption>
-                  </figure>
-                </div>
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-semibold mb-1">Active RSVP via WhatsApp</h4>
+                <p className="text-muted-foreground">
+                  A guided conversation flow allowing guests to confirm attendance quickly and easily.
+                </p>
+              </div>
 
-                <div className="bg-muted/30 p-4 rounded-lg">
-                  <h4 className="font-semibold mb-2">Bot via WhatsApp for customer service</h4>
-                  <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
-                    <li>Exclusive feature of the Black plan (iCasei's complete package)</li>
-                    <li>Built in Zendesk</li>
-                    <li>Includes automated responses, recommended articles and agent transfer</li>
-                  </ul>
-                  <figure className="mt-4">
-                    <img
-                      src={img.botFluxoZendesk}
-                      alt="Flow in Zendesk"
-                      className="w-full rounded-lg border border-border"
-                    />
-                    <figcaption className="text-sm text-muted-foreground mt-2 text-center italic">
-                      Flow in Zendesk
-                    </figcaption>
-                  </figure>
-                </div>
+              <div>
+                <h4 className="font-semibold mb-1">Customer Support Bot (WhatsApp)</h4>
+                <p className="text-muted-foreground">
+                  A bot integrated with Zendesk to provide automated support for premium plan clients.
+                </p>
+              </div>
 
-                <div className="bg-muted/30 p-4 rounded-lg">
-                  <h4 className="font-semibold mb-2">Bot via Chat on institutional website</h4>
-                  <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
-                    <li>Available to all users</li>
-                    <li>Built in Zendesk with neutral and accessible language</li>
-                    <li>Considered different behaviors during and outside business hours</li>
-                  </ul>
-                  <figure className="mt-4">
-                    <img
-                      src={img.botChatSite}
-                      alt="Screenshot of chat on institutional website"
-                      className="w-full rounded-lg border border-border"
-                    />
-                    <figcaption className="text-sm text-muted-foreground mt-2 text-center italic">
-                      Screenshot of chat on institutional website
-                    </figcaption>
-                  </figure>
-                  <div className="mt-4">
-                    <img src={img.botZendesk1} alt="Flow in Zendesk" className="w-full rounded-lg border border-border" />
-                  </div>
-                  <div className="mt-4">
-                    <img src={img.botZendesk2} alt="Flow in Zendesk" className="w-full rounded-lg border border-border" />
-                  </div>
-                  <figure className="mt-4">
-                    <img src={img.botZendesk3} alt="Flows in Zendesk" className="w-full rounded-lg border border-border" />
-                    <figcaption className="text-sm text-muted-foreground mt-2 text-center italic">
-                      Flows in Zendesk
-                    </figcaption>
-                  </figure>
-                </div>
+              <div>
+                <h4 className="font-semibold mb-1">Website Chat Bot</h4>
+                <p className="text-muted-foreground">
+                  A conversational assistant available on the institutional website to answer common questions.
+                </p>
               </div>
             </div>
 
-            <div>
-              <h3 className="text-xl font-semibold mb-4">2. Strategy and objectives</h3>
-              <p className="mb-4">The bots were designed with focus on four pillars:</p>
-              <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
-                <li>
-                  <strong>Satisfaction:</strong> 24/7 service, fast and clear
-                </li>
-                <li>
-                  <strong>Operational efficiency:</strong> ticket volume reduction
-                </li>
-                <li>
-                  <strong>Personalization:</strong> prioritization of different experiences by plan type
-                </li>
-                <li>
-                  <strong>RSVP process improvement:</strong> higher response rate and smooth experience for guests,
-                  plus more agility in confirmations and event management for couples
-                </li>
-              </ul>
-            </div>
+            <p>The flows were designed with four strategic priorities:</p>
+            <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
+              <li>User satisfaction through fast, clear responses</li>
+              <li>Operational efficiency through ticket reduction</li>
+              <li>Personalization based on customer plan tiers</li>
+              <li>Improved RSVP completion rates</li>
+            </ul>
 
-            <div>
-              <h3 className="text-xl font-semibold mb-4">3. Iterations, improvements and monitoring</h3>
-
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold mb-2">For RSVP:</h4>
-                  <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
-                    <li>Bug fixes in the dispatch system</li>
-                    <li>Message reclassification following Meta guidelines</li>
-                    <li>Removal of unnecessary interactions to reduce operational costs</li>
-                    <li>Redirect reviews to external form, personalizing the experience more</li>
-                    <li>Funnel monitoring creation in Metabase</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold mb-2">For service bots:</h4>
-                  <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
-                    <li>Continuous evaluation via Zendesk reports</li>
-                    <li>Identification of topics requiring improvement</li>
-                    <li>Expansion planning with AI, personalization and A/B tests</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            <p className="text-muted-foreground">
+              Continuous monitoring and iteration were implemented using Zendesk reports and Metabase dashboards.
+            </p>
           </div>
         ),
       },
@@ -574,213 +453,82 @@ export const casesDataEn: CasesDataRecord = {
         title: "Solution",
         content: (
           <div className="space-y-6">
-            <p>
-              The project consolidated <strong>an integrated conversational ecosystem</strong>, formed by:
+            <p>The result was an integrated conversational ecosystem combining:</p>
+            <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
+              <li>Automated support via WhatsApp</li>
+              <li>Chat-based support on the website</li>
+              <li>Guided RSVP confirmation through conversational flows</li>
+            </ul>
+
+            <p className="text-muted-foreground">
+              All flows were designed using clear language, structured interaction patterns and friction reduction
+              principles.
             </p>
-
-            <div className="space-y-6">
-              <div className="bg-primary/10 p-6 rounded-xl border border-primary/20">
-                <h4 className="font-semibold text-lg mb-3">1. Active RSVP via WhatsApp</h4>
-                <p className="mb-2 text-muted-foreground">
-                  A fully guided experience for guests to confirm attendance:
-                </p>
-                <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
-                  <li>Structured conversation</li>
-                  <li>Clear and accessible tone</li>
-                  <li>Optimized flows reducing friction</li>
-                  <li>Metrics captured automatically</li>
-                  <li>Scalable experience for couples</li>
-                </ul>
-              </div>
-
-              <div className="bg-accent/20 p-6 rounded-xl border border-accent/30">
-                <h4 className="font-semibold text-lg mb-3">2. Customer Service Bot via WhatsApp</h4>
-                <p className="mb-2 text-muted-foreground">Focused on Black plan clients:</p>
-                <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
-                  <li>Fast and automated responses</li>
-                  <li>Article suggestions</li>
-                  <li>Forwarding to agent when necessary</li>
-                </ul>
-              </div>
-
-              <div className="bg-card p-6 rounded-xl border border-border">
-                <h4 className="font-semibold text-lg mb-3">3. Customer Service Bot via Website Chat</h4>
-                <p className="mb-2 text-muted-foreground">For visitors and general users:</p>
-                <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
-                  <li>Answers questions about website, gift list, plans and payments</li>
-                  <li>Flow adjustment according to operation hours</li>
-                  <li>Neutral and consistent language</li>
-                </ul>
-              </div>
-            </div>
           </div>
         ),
       },
       {
-        title: "Result",
+        title: "Impact",
         content: (
           <div className="space-y-8">
             <p>
-              The 3 conversational products generated <strong>direct, measurable and consistent impact</strong>,
-              consolidating the project as one of iCasei's greatest CX evolutions.
+              The conversational ecosystem significantly improved both customer experience and operational efficiency.
             </p>
 
             <div>
-              <h4 className="font-semibold text-lg mb-4">📉 Significant ticket reduction</h4>
+              <h4 className="font-semibold text-lg mb-4">Operational impact</h4>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2">
-                  <span className="font-bold text-primary">-73%</span>
-                  <span className="text-muted-foreground">
-                    in chat and WhatsApp ticket volume between 2023 and 2025
-                  </span>
+                  <span className="font-bold text-primary">73%</span>
+                  <span className="text-muted-foreground">reduction in chat and WhatsApp ticket volume</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="font-bold text-primary">-12%</span>
-                  <span className="text-muted-foreground">
-                    between 2024 and 2025, indicating stabilization with continuous improvement
-                  </span>
+                  <span className="font-bold text-primary">14%</span>
+                  <span className="text-muted-foreground">reduction in total support tickets over two years</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="font-bold text-primary">-14%</span>
-                  <span className="text-muted-foreground">reduction in total support tickets in 2 years</span>
+                  <span className="font-bold text-primary">+34k</span>
+                  <span className="text-muted-foreground">bot interactions</span>
                 </li>
               </ul>
-              <figure className="mt-6">
-                <img
-                  src={img.botGraficoTickets}
-                  alt="Ticket volume chart"
-                  className="w-full rounded-lg border border-border"
-                />
-                <figcaption className="text-sm text-muted-foreground mt-2 text-center italic">
-                  Screenshot of ticket volume chart, showing a sharp drop and healthy stabilization (Zendesk)
-                </figcaption>
-              </figure>
             </div>
 
             <div>
-              <h4 className="font-semibold text-lg mb-4">🤖 Bot usage and efficiency</h4>
+              <h4 className="font-semibold text-lg mb-4">RSVP experience</h4>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2">
-                  <span className="font-bold text-primary">+34k</span>
-                  <span className="text-muted-foreground">total engagements</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="font-bold text-primary">50%</span>
-                  <span className="text-muted-foreground">
-                    agent transfer (above average due to demand complexity)
-                  </span>
-                </li>
-              </ul>
-              <div className="mt-4 bg-muted/30 p-4 rounded-lg">
-                <p className="text-sm text-muted-foreground mb-2">Topics with significant efficiency:</p>
-                <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4 text-sm">
-                  <li>
-                    "Gift a couple": <strong>13%</strong> transfer
-                  </li>
-                  <li>
-                    "Website and gift list": <strong>16%</strong>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="bg-primary/10 p-6 rounded-xl border border-primary/20">
-              <h4 className="font-semibold text-lg mb-4">💬 RSVP via WhatsApp: high and consolidated satisfaction</h4>
-              <ul className="space-y-2 mb-4">
-                <li className="flex items-center gap-2">
                   <span className="font-bold text-primary">82%</span>
-                  <span className="text-muted-foreground">
-                    satisfaction (maximum ratings) since launch in 2024
-                  </span>
+                  <span className="text-muted-foreground">satisfaction rating</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="font-bold text-primary">+46k</span>
-                  <span className="text-muted-foreground">accumulated reviews</span>
+                  <span className="text-muted-foreground">guest reviews collected</span>
                 </li>
               </ul>
-              <p className="text-sm text-muted-foreground mb-2">New survey showed:</p>
-              <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4 text-sm">
-                <li>
-                  <strong>88%</strong> no difficulties in use
-                </li>
-                <li>
-                  <strong>87%</strong> found the messages clear
-                </li>
-                <li>
-                  <strong>92%</strong> rated as excellent/good
-                </li>
-              </ul>
-              <div className="mt-4">
-                <img
-                  src={img.botRsvpExperiencia}
-                  alt="Overall WhatsApp confirmation experience"
-                  className="w-full rounded-lg"
-                />
-              </div>
             </div>
 
             <div>
-              <h4 className="font-semibold text-lg mb-4">Qualitative feedbacks</h4>
-              <div className="space-y-3">
-                <blockquote className="border-l-4 border-primary pl-4 py-2 bg-muted/30 rounded-r-lg italic text-sm">
-                  "I found it excellent, due to the app's speed and very clear information"
-                </blockquote>
-                <blockquote className="border-l-4 border-primary pl-4 py-2 bg-muted/30 rounded-r-lg italic text-sm">
-                  "Despite being elderly, I found everything well explained"
-                </blockquote>
-                <blockquote className="border-l-4 border-primary pl-4 py-2 bg-muted/30 rounded-r-lg italic text-sm">
-                  "Good afternoon, it was very fast and well explained, easy to fill out, thank you"
-                </blockquote>
-              </div>
-              <div className="mt-4 space-y-4">
-                <img src={img.botFeedbacks1} alt="Qualitative feedbacks" className="w-full rounded-lg" />
-                <img src={img.botFeedbacks2} alt="Qualitative feedbacks" className="w-full rounded-lg" />
-              </div>
-            </div>
-
-            <div>
-              <h4 className="font-semibold text-lg mb-4">🧭 Strategic impact</h4>
-              <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
-                <li>24/7 service with high satisfaction level</li>
-                <li>Consistent reduction in operational costs</li>
-                <li>Significant ticket reduction</li>
-                <li>Expansion of competitive differentiators (especially in the All Inclusive plan)</li>
-                <li>Clear and continuous funnel view via Metabase</li>
-              </ul>
-              <figure className="mt-4">
-                <img
-                  src={img.botMetabaseFunil}
-                  alt="Funnel performance monitoring in Metabase"
-                  className="w-full rounded-lg"
-                />
-                <figcaption className="text-sm text-muted-foreground mt-2 italic">
-                  Screenshot of funnel performance monitoring in Metabase for real-time tracking of WhatsApp attendance confirmations
-                </figcaption>
-              </figure>
-            </div>
-
-            <div>
-              <h4 className="font-semibold text-lg mb-4">🔮 Next steps already planned</h4>
-              <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
-                <li>AI to increase resolutions without agent</li>
-                <li>New topics and flows</li>
-                <li>More advanced personalization by plan</li>
-                <li>A/B tests for optimization</li>
-                <li>Conversion channel for plan contracting, additional services and upgrades</li>
-                <li>Predictive analysis to anticipate resolutions</li>
+              <h4 className="font-semibold text-lg mb-4">User perception</h4>
+              <ul className="space-y-2">
+                <li className="flex items-center gap-2">
+                  <span className="font-bold text-primary">88%</span>
+                  <span className="text-muted-foreground">reported no difficulty using the system</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="font-bold text-primary">87%</span>
+                  <span className="text-muted-foreground">found the messages clear</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="font-bold text-primary">92%</span>
+                  <span className="text-muted-foreground">rated the experience as good or excellent</span>
+                </li>
               </ul>
             </div>
 
-            <div className="bg-card p-6 rounded-xl border border-border">
-              <h4 className="font-semibold text-lg mb-4">Conclusion</h4>
-              <p className="text-muted-foreground">
-                iCasei's bot projects demonstrate that good strategic technology integration, with good conversational
-                design practices, brings real and significant value to the business. With a high satisfaction rate,
-                positive qualitative feedback and reduction in operational costs, the project delivered expressive
-                results that directly impacted customer experience improvement. Additionally, 24/7 availability ensured
-                continuous and efficient support, reinforcing the commitment to excellent service.
-              </p>
-            </div>
+            <p className="text-muted-foreground">
+              Beyond operational improvements, the project introduced new competitive differentiators for iCasei,
+              including active RSVP via WhatsApp.
+            </p>
           </div>
         ),
       },
