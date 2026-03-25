@@ -638,8 +638,6 @@ export const casesDataEn: CasesDataRecord = {
       },
     ],
   },
-    ],
-  },
   "content-system-ops": {
     title: "Creating integrated, scalable and efficient processes through Content System Ops",
     projectType: "Real Case",
