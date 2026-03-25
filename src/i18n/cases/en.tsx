@@ -412,12 +412,52 @@ export const casesDataEn: CasesDataRecord = {
           <div className="space-y-6">
             <p>I helped design a conversational ecosystem based on three complementary solutions:</p>
 
-            <div className="space-y-4">
+            <div className="space-y-6">
               <div>
                 <h4 className="font-semibold mb-1">Active RSVP via WhatsApp</h4>
                 <p className="text-muted-foreground">
                   A guided conversation flow allowing guests to confirm attendance quickly and easily.
                 </p>
+                <figure className="mt-4">
+                  <img
+                    src={img.botRsvpMockup}
+                    alt="Mockup of WhatsApp attendance confirmation conversation"
+                    className="w-full rounded-lg border border-border"
+                  />
+                  <figcaption className="text-sm text-muted-foreground mt-2 text-center italic">
+                    Mockup of WhatsApp attendance confirmation conversation
+                  </figcaption>
+                </figure>
+                <figure className="mt-4">
+                  <img
+                    src={img.botFluxoMiroV1}
+                    alt="Conversational flow in Miro (initial version for testing)"
+                    className="w-full rounded-lg border border-border"
+                  />
+                  <figcaption className="text-sm text-muted-foreground mt-2 text-center italic">
+                    Conversational flow in Miro (initial version for testing)
+                  </figcaption>
+                </figure>
+                <figure className="mt-4">
+                  <img
+                    src={img.botFluxoMiroOficial}
+                    alt="Official flow in Miro with use case table requiring error messages"
+                    className="w-full rounded-lg border border-border"
+                  />
+                  <figcaption className="text-sm text-muted-foreground mt-2 text-center italic">
+                    Official flow in Miro with use case table requiring error messages
+                  </figcaption>
+                </figure>
+                <figure className="mt-4">
+                  <img
+                    src={img.botFluxoMiroIds}
+                    alt="Official flow in Miro with database ID links (for dev)"
+                    className="w-full rounded-lg border border-border"
+                  />
+                  <figcaption className="text-sm text-muted-foreground mt-2 text-center italic">
+                    Official flow in Miro with database ID links (for dev)
+                  </figcaption>
+                </figure>
               </div>
 
               <div>
@@ -425,6 +465,16 @@ export const casesDataEn: CasesDataRecord = {
                 <p className="text-muted-foreground">
                   A bot integrated with Zendesk to provide automated support for premium plan clients.
                 </p>
+                <figure className="mt-4">
+                  <img
+                    src={img.botFluxoZendesk}
+                    alt="Flow in Zendesk"
+                    className="w-full rounded-lg border border-border"
+                  />
+                  <figcaption className="text-sm text-muted-foreground mt-2 text-center italic">
+                    Flow in Zendesk
+                  </figcaption>
+                </figure>
               </div>
 
               <div>
@@ -432,6 +482,28 @@ export const casesDataEn: CasesDataRecord = {
                 <p className="text-muted-foreground">
                   A conversational assistant available on the institutional website to answer common questions.
                 </p>
+                <figure className="mt-4">
+                  <img
+                    src={img.botChatSite}
+                    alt="Screenshot of chat on institutional website"
+                    className="w-full rounded-lg border border-border"
+                  />
+                  <figcaption className="text-sm text-muted-foreground mt-2 text-center italic">
+                    Screenshot of chat on institutional website
+                  </figcaption>
+                </figure>
+                <div className="mt-4">
+                  <img src={img.botZendesk1} alt="Flow in Zendesk" className="w-full rounded-lg border border-border" />
+                </div>
+                <div className="mt-4">
+                  <img src={img.botZendesk2} alt="Flow in Zendesk" className="w-full rounded-lg border border-border" />
+                </div>
+                <figure className="mt-4">
+                  <img src={img.botZendesk3} alt="Flows in Zendesk" className="w-full rounded-lg border border-border" />
+                  <figcaption className="text-sm text-muted-foreground mt-2 text-center italic">
+                    Flows in Zendesk
+                  </figcaption>
+                </figure>
               </div>
             </div>
 
