@@ -633,12 +633,11 @@ export const casesDataEn: CasesDataRecord = {
                 Funnel performance monitoring in Metabase
               </figcaption>
             </figure>
-              Beyond operational improvements, the project introduced new competitive differentiators for iCasei,
-              including active RSVP via WhatsApp.
-            </p>
           </div>
         ),
       },
+    ],
+  },
     ],
   },
   "content-system-ops": {
