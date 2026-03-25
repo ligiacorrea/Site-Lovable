@@ -563,6 +563,16 @@ export const casesDataEn: CasesDataRecord = {
                   <span className="text-muted-foreground">bot interactions</span>
                 </li>
               </ul>
+              <figure className="mt-6">
+                <img
+                  src={img.botGraficoTickets}
+                  alt="Ticket volume chart"
+                  className="w-full rounded-lg border border-border"
+                />
+                <figcaption className="text-sm text-muted-foreground mt-2 text-center italic">
+                  Ticket volume chart showing reduction over time (Zendesk)
+                </figcaption>
+              </figure>
             </div>
 
             <div>
@@ -577,6 +587,13 @@ export const casesDataEn: CasesDataRecord = {
                   <span className="text-muted-foreground">guest reviews collected</span>
                 </li>
               </ul>
+              <div className="mt-4">
+                <img
+                  src={img.botRsvpExperiencia}
+                  alt="Overall WhatsApp confirmation experience"
+                  className="w-full rounded-lg border border-border"
+                />
+              </div>
             </div>
 
             <div>
@@ -595,9 +612,27 @@ export const casesDataEn: CasesDataRecord = {
                   <span className="text-muted-foreground">rated the experience as good or excellent</span>
                 </li>
               </ul>
+              <div className="mt-4 space-y-4">
+                <img src={img.botFeedbacks1} alt="Qualitative feedbacks" className="w-full rounded-lg border border-border" />
+                <img src={img.botFeedbacks2} alt="Qualitative feedbacks" className="w-full rounded-lg border border-border" />
+              </div>
             </div>
 
             <p className="text-muted-foreground">
+              Beyond operational improvements, the project introduced new competitive differentiators for iCasei,
+              including active RSVP via WhatsApp.
+            </p>
+
+            <figure>
+              <img
+                src={img.botMetabaseFunil}
+                alt="Funnel performance monitoring in Metabase"
+                className="w-full rounded-lg border border-border"
+              />
+              <figcaption className="text-sm text-muted-foreground mt-2 text-center italic">
+                Funnel performance monitoring in Metabase
+              </figcaption>
+            </figure>
               Beyond operational improvements, the project introduced new competitive differentiators for iCasei,
               including active RSVP via WhatsApp.
             </p>
