@@ -5056,6 +5056,12 @@ export default function CasePage() {
     "Processo": t.casePage.sectionProcess,
     "Solução": t.casePage.sectionSolution,
     "Resultado": t.casePage.sectionResult,
+    "Problem": t.casePage.sectionProblem,
+    "Process": t.casePage.sectionProcess,
+    "Approach": language === "pt" ? "Abordagem" : "Approach",
+    "Solution": t.casePage.sectionSolution,
+    "Result": t.casePage.sectionResult,
+    "Impact": language === "pt" ? "Impacto" : "Impact",
   };
 
   // Translation helpers

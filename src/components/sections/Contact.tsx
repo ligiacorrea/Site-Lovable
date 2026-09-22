@@ -1,17 +1,20 @@
 import { Linkedin, Mail, MessageCircle } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { portfolioTranslations } from "@/i18n/portfolio";
 
 export function Contact() {
+  const { language } = useLanguage();
+  const t = portfolioTranslations[language].contact;
+
   return (
     <section id="contact" className="py-20 md:py-28 bg-primary text-primary-foreground">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="font-display text-2xl md:text-3xl font-medium text-primary-foreground mb-4">
-            Let's Connect
+            {t.title}
           </h2>
           <p className="text-primary-foreground/70 mb-10 leading-relaxed text-sm md:text-base max-w-xl">
-            If you're working on complex products and care about clarity, scalable content systems and user autonomy, I’d love to connect.
-You can reach me through:
-
+            {t.text}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6">
