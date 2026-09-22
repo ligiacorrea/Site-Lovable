@@ -1,47 +1,27 @@
-const areas = [
-{
-  title: "UX Content Strategy",
-  description: "Defining content principles and decision frameworks that guide product experiences at scale."
-},
-{
-  title: "Discovery & UX Research",
-  description: "Investigating user behavior, validating hypotheses and identifying friction across journeys."
-},
-{
-  title: "Conversational Design",
-  description: "Designing structured conversational flows for chatbot, automation and guided user experiences."
-},
-{
-  title: "Information Architecture",
-  description: "Organizing content and product structures to reduce cognitive load and improve navigation."
-},
-{
-  title: "Help Center & Self-Service Strategy",
-  description: "Designing support ecosystems that increase user autonomy and reduce operational demand."
-},
-{
-  title: "Content Operations & Governance",
-  description: "Building documentation, processes and systems that enable teams to scale content with consistency."
-}];
+import { useLanguage } from "@/contexts/LanguageContext";
+import { portfolioTranslations } from "@/i18n/portfolio";
 
 
 export function Expertise() {
+  const { language } = useLanguage();
+  const t = portfolioTranslations[language].expertise;
+
   return (
     <section id="expertise" className="py-20 md:py-28 bg-primary text-primary-foreground">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-display text-2xl md:text-3xl font-medium text-primary-foreground mb-4">
-            Areas of Expertise
+            {t.title}
           </h2>
           <p className="text-primary-foreground/70 max-w-2xl mb-4 leading-relaxed text-sm md:text-base">
-            My work connects product strategy, user understanding and scalable content systems.
+            {t.intro}
           </p>
           
 
           
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {areas.map((area, index) => <div key={area.title} className="animate-slide-up" style={{ animationDelay: `${index * 0.08}s` }}>
+            {t.areas.map((area, index) => <div key={area.title} className="animate-slide-up" style={{ animationDelay: `${index * 0.08}s` }}>
               
                 <h3 className="font-display text-lg font-medium text-primary-foreground mb-2">
                   {area.title}

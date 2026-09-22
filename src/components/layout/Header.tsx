@@ -1,19 +1,22 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { cn } from "@/lib/utils";
-
-const navItems = [
-  { label: "Work", href: "/#work" },
-  { label: "Expertise", href: "/#expertise" },
-  { label: "About", href: "/#about" },
-  { label: "Contact", href: "/#contact" },
-];
+import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { portfolioTranslations } from "@/i18n/portfolio";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const { language, setLanguage } = useLanguage();
+  const t = portfolioTranslations[language].header;
+  const navItems = [
+    { label: t.work, href: "/#work" },
+    { label: t.expertise, href: "/#expertise" },
+    { label: t.about, href: "/#about" },
+    { label: t.contact, href: "/#contact" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -51,7 +54,8 @@ export function Header() {
             Ligia Corrêa
           </Link>
 
-          <nav className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
+            <nav className="flex items-center gap-8">
             {navItems.map((item) => (
               <a
                 key={item.href}
@@ -67,15 +71,36 @@ export function Header() {
                 {item.label}
               </a>
             ))}
-          </nav>
+            </nav>
+            <div className="flex items-center border border-primary-foreground/30 rounded-md p-0.5" aria-label={t.language}>
+              {(["pt", "en"] as const).map((lang) => (
+                <Button
+                  key={lang}
+                  type="button"
+                  size="sm"
+                  variant="ghost"
+                  onClick={() => setLanguage(lang)}
+                  aria-pressed={language === lang}
+                  aria-label={lang === "pt" ? t.portuguese : t.english}
+                  className={`h-7 px-2 text-xs hover:bg-primary-foreground/10 hover:text-primary-foreground ${language === lang ? "bg-primary-foreground text-primary" : "text-primary-foreground/70"}`}
+                >
+                  {lang.toUpperCase()}
+                </Button>
+              ))}
+            </div>
+          </div>
 
-          <button
+          <Button
+            type="button"
+            variant="ghost"
+            size="icon"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-primary-foreground"
-            aria-label="Toggle menu"
+            className="md:hidden text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
+            aria-label={isMobileMenuOpen ? t.closeMenu : t.openMenu}
+            aria-expanded={isMobileMenuOpen}
           >
             {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </button>
+          </Button>
         </div>
       </div>
 
@@ -96,6 +121,21 @@ export function Header() {
               {item.label}
             </a>
           ))}
+          <div className="flex items-center gap-2 pt-2 border-t border-primary-foreground/10" aria-label={t.language}>
+            {(["pt", "en"] as const).map((lang) => (
+              <Button
+                key={lang}
+                type="button"
+                size="sm"
+                variant="ghost"
+                onClick={() => setLanguage(lang)}
+                aria-pressed={language === lang}
+                className={`h-8 px-3 hover:bg-primary-foreground/10 hover:text-primary-foreground ${language === lang ? "bg-primary-foreground text-primary" : "text-primary-foreground/70"}`}
+              >
+                {lang.toUpperCase()}
+              </Button>
+            ))}
+          </div>
         </nav>
       )}
     </header>
